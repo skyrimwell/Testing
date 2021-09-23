@@ -1,5 +1,5 @@
 class PrimeChecker:
-    def Checker(self, a):
+    def checker(self, a):
         if a <= 0:
             return -1
         if a > 1:
@@ -14,7 +14,8 @@ class PrimeChecker:
 def main():
     print("Добро пожаловать в программу проверки числа на простоту" + "\n" + "")
     a = int(input("Enter an input number:"))
-    if PrimeChecker.Checker(a) == 1:
+    pc = PrimeChecker()
+    if pc.checker(a) == 1:
         print(str(a) + "- простое число")
 
 if __name__ == '__main__':
